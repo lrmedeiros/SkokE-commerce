@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 
-import { StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Feather';
+import {StyleSheet} from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -26,32 +25,68 @@ export const HeaderText = styled.Text`
 
 export const InputContainer = styled.View`
   flex-direction: row;
-  width: 93%; 
-  height: 40px; 
-  margin: 10px; 
-  border: 1px solid #fff; 
-  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+  align-items: center;
 `;
 
 export const Input = styled.TextInput.attrs({
-  placeholderTextColor: "#fff"
+  placeholderTextColor: '#fff',
 })`
-  width: 80%; 
-  height: 100%; 
+  width: 50%;
+  height: 100%;
   background-color: #313030;
-  border:none; 
-  border-radius: 5px; 
+  border: 1px solid #fff;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   padding: 0 10px;
+  margin-right: 1px;
 `;
 
-export const Button = styled.TouchableOpacity`
-  width: 20%; 
-  height: 100%; 
-  background: #fff; 
+export const ButtonSearch = styled.TouchableOpacity`
+  width: 15%;
+  height: 100%;
+  background: #fff;
   align-items: center;
   justify-content: center;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 `;
 
-export const StyledIcon = styled(Icon)`
-  color: #000;
+export const Button = styled(ButtonSearch)`
+  margin-left: 5px;
+  border-radius: 5px;
+`;
+
+export const ContainerProduct = styled.ScrollView``;
+
+export const Product = styled.View`
+  flex-direction: row;
+  margin: 15px;
+  margin-bottom: 0;
+  background-color: #777;
+  border-radius: 5px;
+  padding: 15px;
+`;
+
+export const InformationsContainer = styled.View`
+  margin-left: 10px;
+`;
+
+export const ProductAnalysis = styled.View`
+  flex-direction: row;
+`;
+
+export const ProductText = styled.Text`
+  margin-bottom: 10px;
+  color: #fff;
+`;
+
+export const ImageStyle = styled.Image`
+  width: 90px;
+  height: 90px;
+  border: 1px #000;
 `;
